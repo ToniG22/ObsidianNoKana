@@ -21,7 +21,7 @@ interface ObsidianNoKanaSettings {
 
 const DEFAULT_SETTINGS: ObsidianNoKanaSettings = {
 	hotkeys: {
-		kana: "Ctrl+K",
+		kana: "Ctrl+J",
 		hiragana: "Alt+H",
 		katakana: "Alt+K",
 		romaji: "Alt+R",
