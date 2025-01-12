@@ -155,7 +155,7 @@ class ObsidianNoKanaSettingTab extends PluginSettingTab {
 
 		// Create the GitHub button
 		var githubButton = document.createElement("a");
-		githubButton.href = "https://github.com/ToniG22";
+		githubButton.href = "https://github.com/ToniG22/obsidian-no-kana";
 		githubButton.target = "_blank";
 		githubButton.style.display = "flex";
 		githubButton.style.alignItems = "center";

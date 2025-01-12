@@ -32,7 +32,7 @@
 
 ### Manual Installation
 
-1. Download the latest release from the [GitHub Releases](https://github.com/ToniG22/ObsidianNoKana/releases).
+1. Download the latest release from the [GitHub Releases](https://github.com/ToniG22/obsidian-no-kana/releases).
 2. Copy `main.js`, `manifest.json`, and `styles.css` to your vault’s plugin folder:
     ```
     VaultFolder/.obsidian/plugins/obsidian-no-kana/
@@ -56,7 +56,7 @@
 ## Settings
 
 -   Open the settings tab for:
-    -   Access to the [GitHub Repository](https://github.com/ToniG22/ObsidianNoKana).
+    -   Access to the [GitHub Repository](https://github.com/ToniG22/obsidian-no-kana).
     -   Support the developer with a [donation](https://www.buymeacoffee.com/tonig22).
 
 ---
@@ -107,7 +107,7 @@ If you find this plugin helpful, consider supporting its development:
 -   [Buy Me a Coffee](https://www.buymeacoffee.com/tonig22).
 -   Share the plugin with others!
 
-For feature requests or issues, visit the [GitHub Issues Page](https://github.com/ToniG22/ObsidianNoKana/issues).
+For feature requests or issues, visit the [GitHub Issues Page](https://github.com/ToniG22/obsidian-no-kana/issues).
 
 ---
 
