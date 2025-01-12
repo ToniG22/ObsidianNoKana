@@ -15,6 +15,31 @@
 -   **Settings Tab:** interface to access resources and support.
 -   **Open Source:** Freely available for feature requests and contributions.
 -   **IMPORTANT:** this plugin does not convert to/from _kanji_.
+
+---
+
+## Usage
+
+1. Highlight the text you want to convert in the editor.
+2. Press `Ctrl + P` to open the command palette.
+3. Search for **Sidian No Kana** functions.
+4. Select the appropriate function.
+5. Your romaji now has turned into the corresponding characters.
+
+Recommended:
+1. Assign an hotkey for each function in obsidian settings.
+2. Highlight the text you want to convert and press the hotkey.
+3. Your romaji now has turned into the corresponding characters.
+
+*Step By Step Images:*
+
+
+1. ![Step 1](./img/step1.png "Step 1")
+
+1. ![Step 2](./img/step2.png "Step 2")
+
+1. ![Step 3](./img/step3.png "Step 3")
+
 ---
 
 ## Installation
@@ -34,21 +59,6 @@
     VaultFolder/.obsidian/plugins/sidian-no-kana/
     ```
 3. Enable the plugin in `Settings > Community Plugins`.
-
----
-
-## Usage
-
-1. Highlight the text you want to convert in the editor.
-2. Press `Ctrl + P` to open the command palette.
-3. Search for **Sidian No Kana** functions.
-4. Select the appropriate function.
-5. Your romaji now has turned into the corresponding characters.
-
-Recommended:
-1. Assign an hotkey for each function in obsidian settings.
-2. Highlight the text you want to convert and press the hotkey.
-3. Your romaji now has turned into the corresponding characters.
 
 ---
 
