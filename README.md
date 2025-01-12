@@ -12,10 +12,10 @@
     -   **Katakana**: Converts Romaji to Katakana.
     -   **Romaji**: Converts Kana back to Romaji.
 -   **Customizable Hotkeys:** Preconfigured hotkeys for each conversion type:
-    -   Kana: `Ctrl+J`
-    -   Hiragana: `Alt+H`
-    -   Katakana: `Alt+K`
-    -   Romaji: `Alt+R`
+    -   Kana: ``
+    -   Hiragana: ``
+    -   Katakana: ``
+    -   Romaji: ``
 -   **Settings Tab:** A user-friendly interface to access resources and support.
 -   **Open Source:** Freely available for feature requests and contributions.
 
