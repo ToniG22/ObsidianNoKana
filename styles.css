@@ -6,3 +6,48 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+.sidian-no-kana-info {
+	text-align: center;
+}
+
+.sidian-no-kana-github-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px auto;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 20px;
+	width: 300px;
+	color: #000000;
+	background-color: white;
+	border-radius: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.sidian-no-kana-github-icon {
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+.sidian-no-kana-donate-container {
+	margin-top: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.sidian-no-kana-donate-text {
+	text-align: center;
+}
