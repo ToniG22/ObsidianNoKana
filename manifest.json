@@ -3,7 +3,7 @@
 	"name": "Sidian の Kana",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Wanakana wrapper for obsidian. Converts romaji text to kana.",
+	"description": "Wanakana wrapper, converts romaji text to kana.",
 	"author": "ToniG22",
 	"authorUrl": "https://github.com/ToniG22",
 	"fundingUrl": "https://www.buymeacoffee.com/tonig22",
