@@ -44,12 +44,13 @@
 ## Usage
 
 1. Highlight the text you want to convert in the editor.
-2. Use the appropriate hotkey to perform the desired conversion:
-    - **Kana:** `Ctrl+K`
-    - **Hiragana:** `Alt+H`
-    - **Katakana:** `Alt+K`
-    - **Romaji:** `Alt+R`
+2. Assign the appropriate hotkey to perform the desired conversion in settings:
+    - **Kana:** ``
+    - **Hiragana:** ``
+    - **Katakana:** ``
+    - **Romaji:** ``
 3. The selected text will be replaced with the converted script.
+4. The conversion can also be performed by using `Ctrl + P` and searching for the function required.
 
 ---
 
