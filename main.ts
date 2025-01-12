@@ -10,49 +10,25 @@ import {
 
 import { toKana, toHiragana, toKatakana, toRomaji, isRomaji } from "wanakana";
 
-interface SidianNoKanaSettings {
-	hotkeys: {
-		kana: string;
-		hiragana: string;
-		katakana: string;
-		romaji: string;
-	};
-}
-
-const DEFAULT_SETTINGS: SidianNoKanaSettings = {
-	hotkeys: {
-		kana: "",
-		hiragana: "",
-		katakana: "",
-		romaji: "",
-	},
-};
-
 export default class SidianNoKana extends Plugin {
-	settings: SidianNoKanaSettings;
 
 	async onload() {
-		await this.loadSettings();
 
 		this.registerConversionCommand(
 			"kana",
 			"Replace Romaji with Kana",
-			this.settings.hotkeys.kana
 		);
 		this.registerConversionCommand(
 			"hiragana",
 			"Replace Romaji with Hiragana",
-			this.settings.hotkeys.hiragana
 		);
 		this.registerConversionCommand(
 			"katakana",
 			"Replace Romaji with Katakana",
-			this.settings.hotkeys.katakana
 		);
 		this.registerConversionCommand(
 			"romaji",
 			"Replace Kana with Romaji",
-			this.settings.hotkeys.romaji
 		);
 
 		this.addSettingTab(new SidianNoKanaSettingTab(this.app, this));
@@ -60,11 +36,10 @@ export default class SidianNoKana extends Plugin {
 
 	onunload() {}
 
-	registerConversionCommand(type: string, name: string, hotkey: string) {
+	registerConversionCommand(type: string, name: string) {
 		this.addCommand({
 			id: `convert-${type}`,
 			name,
-			hotkeys: hotkey ? this.parseHotkey(hotkey) : undefined,
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				const selection = editor.getSelection();
 				const converted = this.convertSelection(selection, type);
@@ -86,48 +61,6 @@ export default class SidianNoKana extends Plugin {
 			default:
 				return selection;
 		}
-	}
-
-	parseHotkey(
-		hotkey: string | undefined
-	): { modifiers: Modifier[]; key: string }[] {
-		if (!hotkey) {
-			console.warn("Invalid or undefined hotkey. Using default.");
-			return [];
-		}
-
-		const parts = hotkey.split("+");
-		const key = parts.pop();
-		const modifiers = parts.map((part) => part.trim() as Modifier);
-
-		if (!key) {
-			console.warn(
-				"Invalid hotkey format. Ensure it's in the format 'Modifier + Letter'."
-			);
-			return [];
-		}
-
-		return [
-			{
-				modifiers,
-				key,
-			},
-		];
-	}
-
-	async loadSettings() {
-		this.settings = Object.assign(
-			{},
-			DEFAULT_SETTINGS,
-			await this.loadData()
-		);
-		if (!this.settings.hotkeys) {
-			this.settings.hotkeys = DEFAULT_SETTINGS.hotkeys; // Ensure hotkeys exist
-		}
-	}
-
-	async saveSettings() {
-		await this.saveData(this.settings);
 	}
 }
 
