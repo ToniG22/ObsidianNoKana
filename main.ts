@@ -10,7 +10,7 @@ import {
 
 import { toKana, toHiragana, toKatakana, toRomaji, isRomaji } from "wanakana";
 
-interface ObsidianNoKanaSettings {
+interface SidianNoKanaSettings {
 	hotkeys: {
 		kana: string;
 		hiragana: string;
@@ -19,7 +19,7 @@ interface ObsidianNoKanaSettings {
 	};
 }
 
-const DEFAULT_SETTINGS: ObsidianNoKanaSettings = {
+const DEFAULT_SETTINGS: SidianNoKanaSettings = {
 	hotkeys: {
 		kana: "Ctrl+J",
 		hiragana: "Alt+H",
@@ -28,8 +28,8 @@ const DEFAULT_SETTINGS: ObsidianNoKanaSettings = {
 	},
 };
 
-export default class ObsidianNoKana extends Plugin {
-	settings: ObsidianNoKanaSettings;
+export default class SidianNoKana extends Plugin {
+	settings: SidianNoKanaSettings;
 
 	async onload() {
 		await this.loadSettings();
@@ -57,7 +57,7 @@ export default class ObsidianNoKana extends Plugin {
 			this.settings.hotkeys.romaji
 		);
 
-		this.addSettingTab(new ObsidianNoKanaSettingTab(this.app, this));
+		this.addSettingTab(new SidianNoKanaSettingTab(this.app, this));
 	}
 
 	onunload() {}
@@ -133,10 +133,10 @@ export default class ObsidianNoKana extends Plugin {
 	}
 }
 
-class ObsidianNoKanaSettingTab extends PluginSettingTab {
-	plugin: ObsidianNoKana;
+class SidianNoKanaSettingTab extends PluginSettingTab {
+	plugin: SidianNoKana;
 
-	constructor(app: App, plugin: ObsidianNoKana) {
+	constructor(app: App, plugin: SidianNoKana) {
 		super(app, plugin);
 		this.plugin = plugin;
 	}
@@ -155,7 +155,7 @@ class ObsidianNoKanaSettingTab extends PluginSettingTab {
 
 		// Create the GitHub button
 		var githubButton = document.createElement("a");
-		githubButton.href = "https://github.com/ToniG22/obsidian-no-kana";
+		githubButton.href = "https://github.com/ToniG22/sidian-no-kana";
 		githubButton.target = "_blank";
 		githubButton.style.display = "flex";
 		githubButton.style.alignItems = "center";

@@ -1,6 +1,6 @@
 {
-	"id": "obsidian-no-kana",
-	"name": "Obsidian の Kana",
+	"id": "sidian-no-kana",
+	"name": "Sidian の Kana",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Wanakana wrapper for obsidian. Converts romaji text to kana.",

@@ -1,5 +1,5 @@
 {
-	"name": "obsidian-no-kana",
+	"name": "sidian-no-kana",
 	"version": "1.0.0",
 	"description": "Wanakana wrapper for obsidian. Converts romaji text to kana.",
 	"main": "main.js",
