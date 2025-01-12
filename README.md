@@ -1,24 +1,20 @@
 # Sidian の Kana
 
-**Sidian の Kana** is a plugin for [Obsidian](https://obsidian.md) that enables seamless conversion of text between different Japanese scripts (Kana, Hiragana, Katakana, and Romaji) directly within your markdown files. Ideal for learners and professionals working with Japanese text, this plugin simplifies text transformation using intuitive hotkeys.
+**Sidian の Kana** is a plugin for [Obsidian](https://obsidian.md) that enables seamless conversion of text between different Japanese scripts (Kana, Hiragana, Katakana, and Romaji) directly within your markdown files. Ideal for learners and writing their notes in English and Japanese, this plugin simplifies text transformation using functions that can be attached to hotkeys for a smooth experience.
 
 ---
 
 ## Features
 
--   **Script Conversion:** Convert selected text between:
+-   **Text Conversion:** Convert selected text between:
     -   **Kana**: Converts Romaji to Kana (Hiragana + Katakana).
     -   **Hiragana**: Converts Romaji to Hiragana.
     -   **Katakana**: Converts Romaji to Katakana.
     -   **Romaji**: Converts Kana back to Romaji.
--   **Customizable Hotkeys:** Preconfigured hotkeys for each conversion type:
-    -   Kana: ``
-    -   Hiragana: ``
-    -   Katakana: ``
-    -   Romaji: ``
--   **Settings Tab:** A user-friendly interface to access resources and support.
+-   **Customizable Hotkeys:** There are no pre-configured hotkeys
+-   **Settings Tab:** interface to access resources and support.
 -   **Open Source:** Freely available for feature requests and contributions.
-
+-   **IMPORTANT:** this plugin does not convert to/from _kanji_.
 ---
 
 ## Installation
@@ -44,13 +40,15 @@
 ## Usage
 
 1. Highlight the text you want to convert in the editor.
-2. Assign the appropriate hotkey to perform the desired conversion in settings:
-    - **Kana:** ``
-    - **Hiragana:** ``
-    - **Katakana:** ``
-    - **Romaji:** ``
-3. The selected text will be replaced with the converted script.
-4. The conversion can also be performed by using `Ctrl + P` and searching for the function required.
+2. Press `Ctrl + P` to open the command palette.
+3. Search for **Sidian No Kana** functions.
+4. Select the appropriate function.
+5. Your romaji now has turned into the corresponding characters.
+
+Recommended:
+1. Assign an hotkey for each function in obsidian settings.
+2. Highlight the text you want to convert and press the hotkey.
+3. Your romaji now has turned into the corresponding characters.
 
 ---
 
