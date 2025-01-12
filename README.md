@@ -1,6 +1,6 @@
-# Obsidian の Kana
+# Sidian の Kana
 
-**Obsidian の Kana** is a plugin for [Obsidian](https://obsidian.md) that enables seamless conversion of text between different Japanese scripts (Kana, Hiragana, Katakana, and Romaji) directly within your markdown files. Ideal for learners and professionals working with Japanese text, this plugin simplifies text transformation using intuitive hotkeys.
+**Sidian の Kana** is a plugin for [Obsidian](https://obsidian.md) that enables seamless conversion of text between different Japanese scripts (Kana, Hiragana, Katakana, and Romaji) directly within your markdown files. Ideal for learners and professionals working with Japanese text, this plugin simplifies text transformation using intuitive hotkeys.
 
 ---
 
@@ -27,7 +27,7 @@
 
 1. Open Obsidian.
 2. Navigate to `Settings > Community Plugins > Browse`.
-3. Search for **Obsidian の Kana**.
+3. Search for **Sidian の Kana**.
 4. Click "Install" and enable the plugin.
 
 ### Manual Installation
@@ -35,7 +35,7 @@
 1. Download the latest release from the [GitHub Releases](https://github.com/ToniG22/sidian-no-kana/releases).
 2. Copy `main.js`, `manifest.json`, and `styles.css` to your vault’s plugin folder:
     ```
-    VaultFolder/.obsidian/plugins/obsidian-no-kana/
+    VaultFolder/.obsidian/plugins/sidian-no-kana/
     ```
 3. Enable the plugin in `Settings > Community Plugins`.
 
@@ -72,7 +72,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/ToniG22/ObsidianKana.git
+    git clone https://github.com/ToniG22/sidian-no-kana.git
     ```
 2. Install dependencies:
     ```bash
